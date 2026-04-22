@@ -18,11 +18,11 @@ cask "doubao-input-indicator" do
 
   app "DoubaoInputIndicator.app"
 
-  uninstall launchctl: "local.doubao-input-indicator",
-            quit:      "local.doubao-input-indicator",
-            delete:    "~/Library/LaunchAgents/local.doubao-input-indicator.plist"
+  uninstall quit:       "local.doubao-input-indicator",
+            on_upgrade: :quit
 
   zap trash: [
+    "~/Library/LaunchAgents/local.doubao-input-indicator.plist",
     "~/Library/Logs/DoubaoInputIndicator.log",
     "~/Library/Preferences/local.doubao-input-indicator.plist",
   ]

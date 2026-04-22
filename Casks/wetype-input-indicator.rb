@@ -18,11 +18,11 @@ cask "wetype-input-indicator" do
 
   app "WeTypeInputIndicator.app"
 
-  uninstall launchctl: "local.wetype-input-indicator",
-            quit:      "local.wetype-input-indicator",
-            delete:    "~/Library/LaunchAgents/local.wetype-input-indicator.plist"
+  uninstall quit:       "local.wetype-input-indicator",
+            on_upgrade: :quit
 
   zap trash: [
+    "~/Library/LaunchAgents/local.wetype-input-indicator.plist",
     "~/Library/Logs/WeTypeInputIndicator.log",
     "~/Library/Preferences/local.wetype-input-indicator.plist",
   ]
