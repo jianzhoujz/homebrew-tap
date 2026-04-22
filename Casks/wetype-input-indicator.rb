@@ -1,6 +1,6 @@
 cask "wetype-input-indicator" do
-  version "1.0.3"
-  sha256 "5668363bfd14b95d1a03a0942c7a26d3f05ba1c9a98847c1f37e00d7ce8878f6"
+  version "1.0.4"
+  sha256 "61d18d67a37730fa2bf38fe7c1de074fcd9976f3902a3507c7c5e1166781a3b8"
 
   url "https://github.com/jianzhoujz/input-indicator/releases/download/v#{version}/" \
       "WeTypeInputIndicator-#{version}.zip"
