@@ -1,6 +1,6 @@
 cask "doubao-input-indicator" do
-  version "1.1.0"
-  sha256 "7f834e0bdf31d4210beaa7f75c39b4aeb01297b907e4263a5146b2eb2b95d488"
+  version "1.1.1"
+  sha256 "e717f7a3fa59c2affa77ccc8a0e6204a69c798682b10847dd730596fd2575d84"
 
   url "https://github.com/jianzhoujz/input-indicator/releases/download/v#{version}/" \
       "DoubaoInputIndicator-#{version}.zip"
