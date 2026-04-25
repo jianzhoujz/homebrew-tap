@@ -34,12 +34,12 @@ update the cask `version`/`sha256` fields:
 scripts/package-input-indicator-release.sh 1.0.0 ../input-indicator
 ```
 
-Upload the generated zip files to the matching GitHub release:
+Upload the generated DMG files to the matching GitHub release:
 
 ```bash
 gh release create v1.0.0 \
-  ../input-indicator/dist/DoubaoInputIndicator-1.0.0.zip \
-  ../input-indicator/dist/WeTypeInputIndicator-1.0.0.zip \
+  ../input-indicator/dist/DoubaoInputIndicator-1.0.0.dmg \
+  ../input-indicator/dist/WeTypeInputIndicator-1.0.0.dmg \
   --repo jianzhoujz/input-indicator \
   --title v1.0.0
 ```

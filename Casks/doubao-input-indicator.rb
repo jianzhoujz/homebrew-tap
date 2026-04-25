@@ -1,9 +1,9 @@
 cask "doubao-input-indicator" do
-  version "1.1.1"
-  sha256 "e717f7a3fa59c2affa77ccc8a0e6204a69c798682b10847dd730596fd2575d84"
+  version "1.1.2"
+  sha256 "59b5f26306fe08ae04f4757a390ca8544ebd88887fefbcf3315bd61cf62cd476"
 
   url "https://github.com/jianzhoujz/input-indicator/releases/download/v#{version}/" \
-      "DoubaoInputIndicator-#{version}.zip"
+      "DoubaoInputIndicator-#{version}.dmg"
   name "Doubao Input Indicator"
   name "豆包输入法指示器"
   desc "Menu bar Chinese/English mode indicator for Doubao IME"
