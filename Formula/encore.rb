@@ -1,17 +1,17 @@
 class Encore < Formula
   desc "Local proxy for free AI APIs with automatic rate-limit retry"
   homepage "https://github.com/jianzhoujz/encore"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-arm64.tar.gz"
-      sha256 "1e7bb00e1aa04eedbd92d6545f363556139561cd9e1db6ac2ecd05b893c70d40"
+      sha256 "ad392d60b7c50a121ebd5c3f30cf16029cb1038b293546863d37c4d3ecd0f6d3"
     end
     on_intel do
       url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-amd64.tar.gz"
-      sha256 "0a1ec2faccb994b115ac5ba85741d32a860f6ad439ff1b0b84f19712dd8080fb"
+      sha256 "709cc2b0373e49f15356c4eee5e70f49e7bb1628f9fa407e8b48a1d5c6417f5b"
     end
   end
 
