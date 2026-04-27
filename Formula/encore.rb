@@ -7,11 +7,11 @@ class Encore < Formula
   on_macos do
     on_arm do
       url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-arm64.tar.gz"
-      sha256 "ad392d60b7c50a121ebd5c3f30cf16029cb1038b293546863d37c4d3ecd0f6d3"
+      sha256 "316185a774b2dc3d738e2091b51a22616aa9eac185d0e93ce5144159481e9f2e"
     end
     on_intel do
       url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-amd64.tar.gz"
-      sha256 "709cc2b0373e49f15356c4eee5e70f49e7bb1628f9fa407e8b48a1d5c6417f5b"
+      sha256 "fb9216f45ddba309559dcb169898ed1545e19f900c2f6047f9bb57f09dde73e1"
     end
   end
 
