@@ -20,6 +20,21 @@ brew install encore
 
 See [jianzhoujz/encore](https://github.com/jianzhoujz/encore) for configuration and usage.
 
+### Unquarantine
+
+CLI tool to remove `com.apple.quarantine` extended attributes from macOS applications. Solves the "app is damaged" error for unsigned apps.
+
+```bash
+brew install unquarantine
+```
+
+Features:
+- Auto-elevation: runs with sudo automatically when needed
+- Scans both `/Applications` and `~/Applications`
+- Supports Apple Silicon (arm64) and Intel (amd64)
+
+See [jianzhoujz/unquarantine](https://github.com/jianzhoujz/unquarantine) for details.
+
 ## Casks
 
 ### Input Indicators
