@@ -4,6 +4,8 @@ class Unquarantine < Formula
   version "1.0.0"
   license "MIT"
 
+  depends_on macos: :catalina
+
   on_macos do
     on_arm do
       url "https://github.com/jianzhoujz/unquarantine/releases/download/v1.0.0/unquarantine-1.0.0-darwin-arm64.tar.gz"

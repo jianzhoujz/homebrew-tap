@@ -4,6 +4,8 @@ class Encore < Formula
   version "0.3.0"
   license "MIT"
 
+  depends_on macos: :catalina
+
   on_macos do
     on_arm do
       url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-arm64.tar.gz"

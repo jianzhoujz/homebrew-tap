@@ -61,7 +61,8 @@ build_platform() {
     cd "${DIST_DIR}"
     tar -czf "${ARCHIVE}" "${OUTPUT}"
     
-    local SHA=$(shasum -a 256 "${ARCHIVE}" | awk '{print $1}')
+    local SHA
+    SHA=$(shasum -a 256 "${ARCHIVE}" | awk '{print $1}')
     rm "${BINARY}"
     
     echo -e "${GREEN}OK${NC}   ${GOARCH}: ${SHA:0:16}... ${ARCHIVE}"
@@ -103,7 +104,7 @@ echo -e "${GREEN}OK${NC}   Formula updated"
 # Summary
 echo
 echo -e "${CYAN}Results:${NC}"
-ls -lh "${DIST_DIR}"/*.tar.gz | awk '{print "  " $NF ": " $5}'
+find "${DIST_DIR}" -name "*.tar.gz" -exec ls -lh {} \; | awk '{print "  " $NF ": " $5}'
 echo
 echo -e "${CYAN}SHA256:${NC}"
 echo "  arm64: ${ARM64_SHA}"
