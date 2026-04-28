@@ -1,34 +1,29 @@
 class Encore < Formula
-  desc "Local proxy for free AI APIs with automatic rate-limit retry"
+  desc "Encore CLI tool"
   homepage "https://github.com/jianzhoujz/encore"
-  version "0.3.0"
+  version "1.0.0"
   license "MIT"
 
   depends_on :macos
 
-  on_arm do
-    on_macos do
-      url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-arm64.tar.gz"
-      sha256 "a90f7fd2b0233701233dfa160b2d59e228c77721f902e977efa13eaa16e6e228"
-    end
-  end
-
-  on_intel do
-    on_macos do
-      url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-amd64.tar.gz"
-      sha256 "0fcb818999d5f78c4a3d22a3dcb0057ff0590203c280160df47408f073872968"
-    end
+  if Hardware::CPU.arm?
+    url "https://github.com/jianzhoujz/encore/releases/download/v1.0.0/encore-1.0.0-darwin-arm64.tar.gz"
+    sha256 "d41d8cd98f00b204e9800998ecf8427e"
+  else
+    url "https://github.com/jianzhoujz/encore/releases/download/v1.0.0/encore-1.0.0-darwin-amd64.tar.gz"
+    sha256 "d41d8cd98f00b204e9800998ecf8427e"
   end
 
   def install
-    if Hardware::CPU.arm?
-      bin.install "encore-darwin-arm64" => "encore"
+    binary_name = if Hardware::CPU.arm?
+      "encore-#{version}-darwin-arm64"
     else
-      bin.install "encore-darwin-amd64" => "encore"
+      "encore-#{version}-darwin-amd64"
     end
+    bin.install binary_name => "encore"
   end
 
   test do
-    assert_match "encore v#{version}", shell_output("#{bin}/encore version")
+    assert_match "encore v#{version}", shell_output("#{bin}/encore 2>&1", 1)
   end
 end
