@@ -4,7 +4,7 @@ class Unquarantine < Formula
   version "1.0.0"
   license "MIT"
 
-  depends_on macos: :catalina
+  depends_on :macos
 
   on_macos do
     on_arm do
