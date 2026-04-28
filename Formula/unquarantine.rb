@@ -17,9 +17,9 @@ class Unquarantine < Formula
 
   def install
     binary_name = if Hardware::CPU.arm?
-      "unquarantine-darwin-arm64"
+      "unquarantine-#{version}-darwin-arm64"
     else
-      "unquarantine-darwin-amd64"
+      "unquarantine-#{version}-darwin-amd64"
     end
     bin.install binary_name => "unquarantine"
   end
