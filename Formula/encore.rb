@@ -16,9 +16,9 @@ class Encore < Formula
 
   def install
     binary_name = if Hardware::CPU.arm?
-      "encore-#{version}-darwin-arm64"
+      "encore-darwin-arm64"
     else
-      "encore-#{version}-darwin-amd64"
+      "encore-darwin-amd64"
     end
     bin.install binary_name => "encore"
   end
