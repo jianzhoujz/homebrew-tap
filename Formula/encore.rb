@@ -7,12 +7,17 @@ class Encore < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-arm64.tar.gz"
-    sha256 "a90f7fd2b0233701233dfa160b2d59e228c77721f902e977efa13eaa16e6e228"
+    on_macos do
+      url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-arm64.tar.gz"
+      sha256 "a90f7fd2b0233701233dfa160b2d59e228c77721f902e977efa13eaa16e6e228"
+    end
   end
+
   on_intel do
-    url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-amd64.tar.gz"
-    sha256 "0fcb818999d5f78c4a3d22a3dcb0057ff0590203c280160df47408f073872968"
+    on_macos do
+      url "https://github.com/jianzhoujz/encore/releases/download/v#{version}/encore-#{version}-darwin-amd64.tar.gz"
+      sha256 "0fcb818999d5f78c4a3d22a3dcb0057ff0590203c280160df47408f073872968"
+    end
   end
 
   def install

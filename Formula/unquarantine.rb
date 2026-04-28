@@ -7,12 +7,17 @@ class Unquarantine < Formula
   depends_on :macos
 
   on_arm do
-    url "https://github.com/jianzhoujz/unquarantine/releases/download/v1.0.0/unquarantine-1.0.0-darwin-arm64.tar.gz"
-    sha256 "4248984a3c9d09669859eb44a62a979edbe69b068537178a31b235626007c3b9"
+    on_macos do
+      url "https://github.com/jianzhoujz/unquarantine/releases/download/v1.0.0/unquarantine-1.0.0-darwin-arm64.tar.gz"
+      sha256 "4248984a3c9d09669859eb44a62a979edbe69b068537178a31b235626007c3b9"
+    end
   end
+
   on_intel do
-    url "https://github.com/jianzhoujz/unquarantine/releases/download/v1.0.0/unquarantine-1.0.0-darwin-amd64.tar.gz"
-    sha256 "439156456c6fcc49aacd6836205c32db282bba0f441d4633ebceddddaeb36722"
+    on_macos do
+      url "https://github.com/jianzhoujz/unquarantine/releases/download/v1.0.0/unquarantine-1.0.0-darwin-amd64.tar.gz"
+      sha256 "439156456c6fcc49aacd6836205c32db282bba0f441d4633ebceddddaeb36722"
+    end
   end
 
   def install
