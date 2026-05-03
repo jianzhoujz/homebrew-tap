@@ -1,6 +1,6 @@
 cask "bilicast" do
-  version "0.3.0"
-  sha256 "90ed670a5d8cc735513f5ffb2f7855a9295b4a0a99d139e0115172ec15a17e17"
+  version "0.3.1"
+  sha256 "c64acad913f3156250b3ae81c53b7cffd466b3e9f1de2b803e5f32b774c5bcb2"
 
   url "https://github.com/jianzhoujz/bilicast/releases/download/v#{version}/" \
       "BiliCastHelper-#{version}.dmg"
