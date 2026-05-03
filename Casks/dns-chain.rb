@@ -1,10 +1,10 @@
 cask "dns-chain" do
   version "0.1.0"
-  sha256 "a889be56739d70049ecc65d3f810074f600223cb85c42193fdabf435e842176b"
+  sha256 "4a0eced7b771bf2f37e8357e51079e51562831af14ffba1af8b45ae75cffe114"
 
   url "https://github.com/jianzhoujz/dns-chain/releases/download/v#{version}/" \
       "DNSChain-#{version}.dmg"
-  name "DNS Chain"
+  name "DNSChain"
   desc "Menu bar local DNS-over-HTTPS gateway with chained fallback"
   homepage "https://github.com/jianzhoujz/dns-chain"
 
@@ -15,13 +15,14 @@ cask "dns-chain" do
 
   depends_on macos: ">= :sonoma"
 
-  app "DNS Chain.app"
+  app "DNSChain.app"
 
   uninstall quit:       "local.dns-chain",
             on_upgrade: :quit
 
   zap trash: [
     "~/.config/dns-chain",
+    "~/Library/Application Support/DNSChain",
     "~/Library/Application Support/DNS Chain",
     "~/Library/LaunchAgents/com.dns-chain.launch.plist",
   ]
