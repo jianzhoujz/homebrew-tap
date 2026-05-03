@@ -1,11 +1,11 @@
 cask "bilicast" do
-  version "0.3.1"
-  sha256 "c64acad913f3156250b3ae81c53b7cffd466b3e9f1de2b803e5f32b774c5bcb2"
+  version "0.4.0"
+  sha256 "c17cf9e52f344171ef9610b632a490787a130b7511b31bc13335c487f7d8bef7"
 
   url "https://github.com/jianzhoujz/bilicast/releases/download/v#{version}/" \
-      "BiliCastHelper-#{version}.dmg"
-  name "BiliCastHelper"
-  name "哔哩投屏助手"
+      "BiliCast-#{version}.dmg"
+  name "BiliCast"
+  name "哔哩投屏"
   desc "Cast Bilibili web videos to local-network DLNA TVs from a menu bar"
   homepage "https://github.com/jianzhoujz/bilicast"
 
@@ -16,12 +16,12 @@ cask "bilicast" do
 
   depends_on macos: ">= :ventura"
 
-  app "BiliCastHelper.app"
+  app "BiliCast.app"
 
-  uninstall quit: "local.bilicast-helper"
+  uninstall quit: "local.bilicast"
 
   zap trash: [
-    "~/Library/Application Support/BiliCastHelper",
-    "~/Library/Logs/BiliCastHelper",
+    "~/Library/Application Support/BiliCast",
+    "~/Library/Logs/BiliCast",
   ]
 end
