@@ -18,7 +18,8 @@ cask "bilicast" do
 
   app "BiliCast.app"
 
-  uninstall quit: "local.bilicast"
+  uninstall quit:       "local.bilicast",
+            on_upgrade: :quit
 
   zap trash: [
     "~/Library/Application Support/BiliCast",
