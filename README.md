@@ -37,6 +37,16 @@ See [jianzhoujz/unquarantine](https://github.com/jianzhoujz/unquarantine) for de
 
 ## Casks
 
+### DNS Chain
+
+macOS menu bar local DNS-over-HTTPS gateway with chained fallback, cache, certificates, and query logs.
+
+```bash
+brew install --cask dns-chain
+```
+
+See [jianzhoujz/dns-chain](https://github.com/jianzhoujz/dns-chain) for setup and configuration.
+
 ### Input Indicators
 
 Menu bar utilities for macOS 12+ that show Chinese/English mode for input methods.
