@@ -1,6 +1,6 @@
 cask "dns-chain" do
-  version "0.1.0"
-  sha256 "4a0eced7b771bf2f37e8357e51079e51562831af14ffba1af8b45ae75cffe114"
+  version "0.1.1"
+  sha256 "f8a80929e7a0e7dcd1a1f2e3b5ce6fe2519e702c0db0d253db937a2a42d95ae9"
 
   url "https://github.com/jianzhoujz/dns-chain/releases/download/v#{version}/" \
       "DNSChain-#{version}.dmg"
