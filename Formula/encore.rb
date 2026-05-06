@@ -1,17 +1,17 @@
 class Encore < Formula
   desc "Local proxy for AI APIs with automatic retry"
   homepage "https://github.com/jianzhoujz/encore"
-  version "0.3.3"
+  version "0.3.4"
   license "MIT"
 
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/jianzhoujz/encore/releases/download/v0.3.3/encore-0.3.3-darwin-arm64.tar.gz"
-    sha256 "774c3e6e380d14b775f2afcebbe0b2ad76f7f64fd1eb2ba7809b89c8ee428bb7"
+    url "https://github.com/jianzhoujz/encore/releases/download/v0.3.4/encore-0.3.4-darwin-arm64.tar.gz"
+    sha256 "9f5d226e979ab2d6ce71a6f557a7c258ce00a15941f0ab71bcd434e2e846c980"
   else
-    url "https://github.com/jianzhoujz/encore/releases/download/v0.3.3/encore-0.3.3-darwin-amd64.tar.gz"
-    sha256 "6372bfc88511d0ab8f68175bddcb2af306456da1521b547c1a281407c04ae854"
+    url "https://github.com/jianzhoujz/encore/releases/download/v0.3.4/encore-0.3.4-darwin-amd64.tar.gz"
+    sha256 "b915eeb91fe4ca5db278e06ffd4f173813722bd22303ded82fa72311eca9484a"
   end
 
   def install
