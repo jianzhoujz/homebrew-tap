@@ -1,6 +1,6 @@
 cask "mac-browser-switch" do
-  version "0.1.1"
-  sha256 "f273be61a7c1a2edd5e746de67b6b26ec6727ea3704ee4e183038c4376e6f565"
+  version "0.1.2"
+  sha256 "52bf1d385fcf8cf1ff9bcd56ae6acd7bd48390b3fd1dc76703fbe40672f37e69"
 
   url "https://github.com/jianzhoujz/mac-browser-switch/releases/download/v#{version}/" \
       "BrowserSwitch-#{version}.dmg"
