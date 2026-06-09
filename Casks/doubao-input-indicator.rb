@@ -14,7 +14,7 @@ cask "doubao-input-indicator" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "DoubaoInputIndicator.app"
 
